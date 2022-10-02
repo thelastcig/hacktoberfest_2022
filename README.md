@@ -1,3 +1,3 @@
 # hacktoberfest_2022
 
-i m the first contributor : hogrider301
+1. I m the first contributor : hogrider301 
