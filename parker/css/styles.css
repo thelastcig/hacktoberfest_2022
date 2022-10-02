@@ -1,0 +1,302 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+:root {
+    --brand-primary: #fbbd08;
+    --brand-secondary: #eaae00;
+}
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    padding-top: 85px;
+    
+}
+
+.brand {
+    font-family: "Pacifico", sans-serif;
+    font-size: 2.5rem;
+}
+
+header .brand {
+    color: white;
+}
+
+header .brand:hover {
+    color: var(--brand-primary);
+}
+
+header .menu {
+    border-radius: 0 !important;
+    align-items: center;
+}
+
+header .menu .item {
+    font-size: 1.15rem !important;
+}
+
+header .ui.secondary.inverted.menu .active.item {
+    color: var(--brand-primary) !important;
+    border-color: var(--brand-primary) !important;
+    border-bottom-width: 3px !important;
+}
+
+header .ui.secondary.inverted.menu a.item:hover {
+    color: var(--brand-primary) !important;
+}
+
+.message.floating {
+    position: fixed;
+    z-index: 999;
+    right: 1rem;
+    background-color: var(--brand-primary);
+}
+
+.message.floating .header {
+    margin: 0 3rem 0 0;
+}
+
+.message.floating .close {
+    top: 1rem !important;
+}
+
+main {
+    min-height: 60vh;
+}
+
+.section {
+    padding: 3rem 15px;
+}
+
+.section__title {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section__title h2 {
+    font-family: "Pacifico", sans-serif;
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.section__title h2:before,
+.section__title h2:after {
+    content: '';
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    position: absolute;
+    width: 250px;
+    top: 50%;
+    height: 8px;
+    margin-top: -4px;
+}
+
+.section__title h2:before {
+    left: -250px;
+}
+
+.section__title h2:after {
+    right: -250px;
+}
+
+.section__content {
+    margin-top: 3rem;
+}
+
+#section--menus {
+    position: relative;
+    background: url('../images/menus_bg.jpeg') center center / cover no-repeat fixed;
+}
+
+#section--menus:before {
+    content: '';
+    background: rgba(0, 0, 0, .75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#section--menus .container {
+    position: relative;
+    z-index: 10;
+    color: white;
+}
+
+#section--menus .section__title h2:before,
+#section--menus .section__title h2:after {
+    border-color: white;
+}
+
+#section--menus h2.divider,
+#section--menus .items .item .header,
+#section--menus .items .item .meta {
+    color: rgba(255, 255, 255, .7);
+}
+
+.menus.items .item:nth-child(even) {
+    padding-left: 2rem;
+}
+
+.menus.items .item:nth-child(odd) {
+    padding-right: 2rem;
+}
+
+.menus.items .item .image,
+.menus.items .item .image img {
+    width: 100%;
+    height: 90px;
+}
+
+footer {
+    border-radius: 0 !important;
+    margin: 0 !important;
+}
+
+footer .brand {
+    color: var(--brand-primary);
+}
+
+footer .list .item {
+    color: rgba(255, 255, 255, .7);
+}
+
+footer .list:not(.horizontal) .item {
+    margin-top: .5rem;
+}
+
+footer a {
+    color: rgba(255, 255, 255, .7) !important;
+}
+
+footer a.active,
+footer a:hover {
+    color: var(--brand-primary) !important;
+}
+
+.card.event img {
+    height: 230px !important;
+}
+
+.image-and-text,
+.text-and-image {
+    display: flex;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.image-and-text .text,
+.text-and-image .text {
+    width: 600px;
+    padding: 5rem 3rem;
+    margin-top: 0;
+    z-index: 10;
+}
+
+.image-and-text .text {
+    margin-left: -300px;
+}
+
+.text-and-image .text {
+    margin-right: -300px;
+}
+
+.image-and-text .text p,
+.text-and-image .text p {
+    font-size: 1.15rem;
+    line-height: 2rem;
+}
+
+.field .helper-text {
+    color: #999;
+}
+
+/* Field image */
+.field-image .image-preview {
+    display: block;
+    margin-bottom: .25rem;
+    max-width: 150px;
+    height: auto;
+}
+
+.field-image input {
+    display: none;
+}
+
+.field-image label.ui {
+    max-width: 150px;
+}
+
+.required.field-image label.ui:after {
+    display: none !important;
+}
+/* End field image */
+
+/* Semantic UI components */
+.ui.card > .content,
+.ui.cards > .card > .content {
+    flex-grow: unset;
+}
+
+.ui.card {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.ui.ribbon.upcoming {
+    background-color: #2185d0;
+    border-color: #2185d0;
+    color: white;
+}
+
+.ui.ribbon.completed {
+    background-color: #21ba45;
+    border-color: #21ba45;
+    color: white;
+}
+
+.ui.ribbon.cancelled {
+    background-color: #db2828;
+    border-color: #db2828;
+    color: white;
+}
+
+.ui.modal > .actions {
+    background: white;
+    border: none;
+}
+
+.ui.modal .form .actions {
+    padding-top: 1rem;
+    text-align: right;
+}
+
+.ui.primary.button {
+    background-color: var(--brand-primary) !important;
+}
+
+.ui.primary.button:hover,
+.ui.primary.button:focus {
+    background-color: var(--brand-secondary) !important;
+}
+
+.ui.inverted.primary.basic.button {
+    color: var(--brand-primary) !important;
+    box-shadow: 0 0 0 2px var(--brand-primary) inset !important;
+}
+
+.ui.inverted.primary.basic.button:hover,
+.ui.inverted.primary.basic.button:focus {
+    color: var(--brand-secondary) !important;
+    box-shadow: 0 0 0 2px var(--brand-secondary) inset !important;
+}
+/* End semantic UI components */
