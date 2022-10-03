@@ -1,4 +1,3 @@
-# hacktoberfest_2022
 
 	Time to contribute to open source, improve skill and build greater technology in the process.
 	All the pull requests will be accepted that follow the below rules.
